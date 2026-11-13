@@ -76,9 +76,9 @@ g++ -std=c++20 AI_report.cpp -o AI_report.exe -lole32 -loleaut32 -luuid -lwbemuu
 2. **代码注释中的 `goto cleanup`**：为了保证 COM 指针在所有异常分支下都能被正确释放，程序在 `main` 函数中使用了 `goto cleanup`。请勿在 `goto` 跨越的作用域内添加需要 RAII 管理的对象（如 `std::vector`），以免造成析构跳过。
 3. **控制台编码**：程序内部使用了 `_O_U16TEXT` 强制宽字符输出。如果你的终端出现乱码，请确保使用的是 Windows Terminal 或 PowerShell，而不是旧版的 `cmd.exe`。
 
-### 📜 开源协议
-
-本项目基于 [MIT License](LICENSE) 开源。你可以随意修改、分发，甚至将它作为你毕业设计或私人工具的基石。
+> ### 📜 开源协议
+> 
+> 本项目基于 **[Apache License 2.0](LICENSE)** 开源。你可以自由修改、分发，并用于商业项目。本协议已包含明确的专利授权条款，为开发者和使用者提供双重保障。
 
 ---
 
@@ -150,6 +150,6 @@ It's recommended to run `AI_report.exe` **as Administrator** (to fully read disk
 2. **`goto cleanup` in Code**: To ensure COM pointers are properly released in all exception branches, `main` uses `goto cleanup`. Do NOT add objects requiring RAII management (like `std::vector`) inside the scope crossed by `goto`, to avoid skipping destructors.
 3. **Console Encoding**: The program internally uses `_O_U16TEXT` to force wide-char output. If you see garbled text, ensure you are using Windows Terminal or PowerShell, not the legacy `cmd.exe`.
 
-### 📜 License
-
-This project is open-sourced under the [MIT License](LICENSE). Feel free to modify, distribute, or even use it as a foundation for your graduation project or personal tools.
+> ### 📜 License
+> 
+> This project is open-sourced under the **[Apache License 2.0](LICENSE)**. You are free to modify, distribute, and use it for commercial purposes. This license includes an express grant of patent rights, providing dual protection for both developers and users.
