@@ -1,4 +1,17 @@
-// AI_report.cpp (中英双语自适应完美版)
+// Copyright 2024 ShuoweiFu
+//
+// Licensed under the Apache License, Version 2.0 (the "License");
+// you may not use this file except in compliance with the License.
+// You may obtain a copy of the License at
+//
+//     http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS,
+// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+// See the License for the specific language governing permissions and
+// limitations under the License.
+
 // 编译：g++ -std=c++20 AI_report.cpp -o AI_report.exe -lole32 -loleaut32 -luuid -lwbemuuid -lshell32 -lcurl
 
 #define _WIN32_DCOM
